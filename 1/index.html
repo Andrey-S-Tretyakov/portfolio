@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    <!-- animate -->
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="js/wow.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--jquery plagins-->
+    <script src="js/default.js"></script>
+    <script src="js/select.jquery.js"></script>
+    <script src="js/checkbox.jquery.js"></script>
+</head>
+<body>
+    <div class="block">
+        <div class="content">
+            <div class="header">
+                <img src="./img/1/logo.png" />
+                <!--Форма выбора языка-->
+                <select id="languague">
+                    <option data-flagurl="img/1/flag/1.png" selected>Русский</option>
+                    <option data-flagurl="img/1/flag/2.png">English</option>
+                    <option data-flagurl="img/1/flag/3.png">Germany</option>
+                    <option data-flagurl="img/1/flag/4.png">Malasian</option>
+                </select>
+                <!--Стилизация форму-->
+                <script>$('#languague').select();</script>
+            </div>
+            <div class="baner">
+                <hgroup>
+                    <h1>Система "ForexCopy"</h1>
+                    <h2>от компании ИнстаФорекс</h2>
+                </hgroup>
+                <img src="./img/1/baner.png" />
+            </div>
+                <div class="form">
+                    <h3>Повторяйте прибыльные сделки и решения ведущих трейдеров!</h3>
+                    <div class="button" id="motion">Открыть счет</div>
+                </div>
+        </div>
+    </div>
+    <div class="block">
+        <img src="./img/2/1.png" class="element1" />
+        <img src="./img/2/2.png" class="element2" />
+        <div class="content">
+            <h2>Подключайтесь к системе ForexCopy – и просто начинайте копировать сделки</h2>
+            <ul>
+                <li>ForexCopy позволяет копировать сделки успешных трейдеров в режиме реального времени</li>
+                <li>Копировать можно с выбранным масштабом – как в большую, так и в меньшую сторону</li>
+                <li>ForexCopy позволяет копировать только желаемые валютные пары. Подписчик всегда может изменить список валютных пар без прекращения подписки</li>
+                <li>Помимо валютных инструментов, в системе ForexCopy можно копировать бинарные Форекс-опционы</li>
+                <li>Подписчики выплачивают комиссию трейдерам только за сделки, закрытые в профит</li>
+                <li>Копирование сделок для подписчика может быть бесплатным</li>
+            </ul>
+            <h3>Учитесь и зарабатывайте одновременно!</h3>
+            <h3>Изучайте успешные сделки, повторяйте правильные решения, копируйте выгодные сделки!</h3>
+        </div>
+    </div>
+        <div class="block">
+        <div class="content">
+            <h2>Три шага для получения прибыли</h2>
+            <div class="animate">
+                <div class="wow progress1 progressBar" data-wow-duration="1s"></div>
+                <div class="wow progress2 progressBar" data-wow-duration="1s"></div>
+                
+                <div class="wow icon slideInLeft" data-wow-delay="0s"></div>
+                
+                <div class="wow icon slideInLeft" data-wow-delay="0.1s"></div>
+                <div class="wow icon slideInLeft" data-wow-delay="0.2s"></div>
+                <div class="wow icon slideInLeft" data-wow-delay="0.3s"></div>
+               
+                
+                <div class="wow description slideInUp" data-wow-delay="0s"><p>Заполнение формы и открытие торгового счета</p></div>
+                <div class="wow description slideInUp" data-wow-delay="0.1s"><p>Регистрация в системе ForexCopy</p></div>
+                <div class="wow description slideInUp" data-wow-delay="0.2s"><p>Копирование сделок успешный трейдеров</p></div>
+                <div class="wow description slideInUp" data-wow-delay="0.3s"><p>Получение прибыли</p></div>
+                
+                <div class="wow step slideInUp" data-wow-delay="0s">ШАГ 1</div>
+                <div class="wow step slideInUp" data-wow-delay="0.1s">ШАГ 2</div>
+                <div class="wow step slideInUp" data-wow-delay="0.2s">ШАГ 3</div>
+
+                <div class="shadow wow step slideInUp"></div>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <h2>ForexCopy - это уникальный сервис простого копирования сделок успешных участников валютного рынка Форекс</h2>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <form id="form">
+                <div>
+                    <p>Для открытия торгового счета и получения  подробной информации заполните форму</p>
+                    <input type="text" placeholder="E-mail" />
+                    <input type="text" placeholder="Полное имя, как в паспорте" />
+                    <input type="checkbox" id="checkbox1" checked /><label for="checkbox1">Согласен с условиями оферты</label>
+                    <!--Стилизация checkbox-->
+                    <script>$('#checkbox1').checkbox();</script>
+                    <div class="button" id="open">Открыть счет</div>
+                </div>
+            </form>
+            <footer>ГК ИнстаФорекс © 2007-2015</footer>
+        </div>
+    </div>
+</body>
+</html>

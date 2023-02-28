@@ -1,0 +1,706 @@
+body
+{
+    font-family : Arial;
+    font-size : 17px;
+    min-width : 620px;
+    z-index : 0;
+    position : relative;
+}
+input[type=text] /* Текстовые поля */
+{
+    display : block;
+    width : 90%;
+    height : auto;
+    padding : 15px 5%;
+    margin : 20px auto;
+    border-radius : 10px;
+    border : 1px solid #ccc;
+    border-bottom-color : #fff;
+    border-right-color : #fff;
+    background: linear-gradient(to bottom, #e6e6e6 0%, #f6f6f6 100%);
+    box-shadow : inset 1px 1px .5px rgba(0,0,0,0.2), inset 0 1px 5px rgba(0,0,0,0.2), inset -1px -1px .5px rgba(0,0,0,0.1);
+    font-size : 1.3em;
+    color : #666;
+    text-shadow : .5px .5px 0 rgba(255,255,255,.9);
+}
+input[type=text]:focus
+{
+    border-color : #888;
+}
+div.block /* Блочный элемент */
+{
+    padding : 0 10px;
+    position : relative;
+}
+div.content /* Содержание блок */
+{
+    width : auto;
+    max-width : 1100px;
+    margin : 0 auto;
+    padding : 0 20px;
+}
+div.button /* Общий стиль кнопки */
+{
+    display : block;
+    width : auto;
+    max-width : 350px;
+    height : auto;
+    padding : 20px 0;
+    margin : 15px auto;
+    border-radius : 10px;
+    border : 1px solid #a1a1a1;
+    background: linear-gradient(to bottom, #f3f3f3 0%, #e6e6e6 50%, #dadada 100%);
+    box-shadow : inset -1px -1px 1px rgba(255,255,255,1), 0 -1px 5px rgba(0,0,0,.4);
+    font-size : 1.5em;
+    font-weight : 600;
+    text-align : center;
+    text-transform : uppercase;
+    color : #be1206;
+}
+div.button:hover
+{
+    cursor : pointer;
+    background: linear-gradient(to bottom, #e3200c 0%, #ca1607 25%, #b11006 50%, #960b04 75%, #a00b04 100%);
+    box-shadow : 0 -1px 4px rgba(0,0,0,.3);
+    color : #fff;
+    text-shadow : -1px -1px 0 rgba(0,0,0,.3);
+}
+div.button:active
+{
+    border-color : #fff;
+    background: linear-gradient(to bottom, #900b06 0%, #ce1707 100%);
+    box-shadow : inset 0 3px 10px rgba(0,0,0,.5);
+}
+h1, h2, h3 /* Заголовки */
+{
+    text-align : center;
+}
+/* Блок - Повторяйтие прибыльные сделки */
+div.block:nth-child(1)
+{
+    background : radial-gradient(circle farthest-side,#fff,#bfbfbf);
+    text-align : center;
+    padding : 0 0 50px;
+}
+div.block:nth-child(1) div.header /* Заголовок */
+{
+    display : inline-flex;
+    align-items : center;
+    justify-content : space-between;
+    width : 100%;
+    padding : 15px 0;
+    border-bottom : 1px solid #bbb;
+    box-shadow : 0 1px 0 rgba(250,250,250,.8);
+}
+div.block:nth-child(1) div.baner /* Банер */
+{
+    position : relative;
+    margin : 50px 0 0;
+}
+div.block:nth-child(1) div.baner img
+{
+    width : 100%;
+}
+div.block:nth-child(1) div.baner hgroup
+{
+    position : absolute;
+    display : flex;
+    flex-direction : column;
+    font-family : Impact;
+    line-height : 1.2;
+    color : #c93b2f;
+    text-shadow : 1px 1px 1px rgba(0,0,0,.2), -1px -1px 1px rgba(255,255,255,.6);
+}
+div.block:nth-child(1) h1
+{
+    font-size : 3em;
+    text-transform : uppercase;
+}
+div.block:nth-child(1) h2
+{
+    font-size : 2.38em;
+}
+div.block:nth-child(1) h3
+{
+    font-size : 1.8em;
+    color : #333;
+    text-shadow : .5px .5px 0 rgba(255,255,255,1);
+}
+div.block:nth-child(1) div.button
+{
+    margin : 50px auto 0;
+}
+/* Блок - Подключайтесь с системе ForexCopy */
+div.block:nth-child(2)
+{
+    position : relative;
+    padding : 80px 0 90px;
+    background: linear-gradient(to bottom, #393939, #545454, #393939);
+    box-shadow : 0 5px 5px rgba(0,0,0,.2), 0px -4px 10px rgba(0,0,0,.3);
+    overflow : hidden;
+    text-align : center;
+}
+img.element1 /* Декоративный элемент слева */
+{
+    display : none;
+    position : absolute;
+    top : 40px;
+    left : -80px;
+    width : 300px;
+}
+img.element2 /* Декоративный элемент справа */
+{
+    display : none;
+    position : absolute;
+    top : -20px;
+    right : -35px;
+    width : 260px;
+}
+div.block:nth-child(2) h2 /* Заголовок */
+{
+    font-size : 1.3em;
+    color : #f6d12b;
+    text-transform : uppercase;
+}
+div.block:nth-child(2) h3
+{
+    font-size : 1.2em;
+    color : #f6d12b;
+}
+div.block:nth-child(2) ul
+{
+    width : 100%;
+    max-width : 800px;
+    margin : 0 auto;
+    padding : 10px 20px;
+}
+div.block:nth-child(2) li
+{
+    vertical-align : top;
+    margin : 10px 30px;
+    list-style-image : url('../img/2/icon.png');
+    text-align : left;
+    color : #fff;
+}
+/* Блок - Три шага для получения прибыли */
+div.block:nth-child(3)
+{
+    padding : 90px 0;
+    background : radial-gradient(circle farthest-side,#fff,#bfbfbf);
+}
+div.block:nth-child(3) h2 /* Заголовок */
+{
+    font-size : 2.2em;
+    color : #333;
+    text-transform : uppercase;
+}
+/* Блок - ForexCopy это уникальный сервис */
+div.block:nth-child(4)
+{
+    position : relative;
+    padding : 70px 0;
+    background: linear-gradient(to bottom, #d3574e 0%, #c41c10 50%);
+    box-shadow : 0 0 10px rgba(0,0,0,.5);
+    text-align : center;
+}
+div.block:nth-child(4)::after, div.block:nth-child(4)::before
+{
+    position: absolute;
+    z-index : -1;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left : 50%;
+    bottom : 0;
+    width: 50px;
+    height:50px;
+    margin : 0 0 -25px -25px;
+    background-color: #c41c10;
+    box-shadow : 0 0 10px rgba(0,0,0,.5);
+    content: '';
+}
+div.block:nth-child(4)::before
+{
+    z-index : 1;
+    box-shadow : none;
+}
+div.block:nth-child(4) h2
+{
+    font-size : 1.6em;
+    text-transform : uppercase;
+    line-height : 1.5;
+    color : #fff;
+}
+/* Блок - Форма открытия счета */
+div.block:nth-child(5)
+{
+    position : relative;
+    z-index : -2;
+    padding : 80px 0 40px;
+    background: linear-gradient(to bottom, #c5c5c5, #c3c3c3);
+    background-image : url('../img/5/background.png');
+    background-position : center;
+    text-align : center;
+}
+div.block:nth-child(5) form /* Форма открытия счета */
+{
+    max-width : 520px;
+    width : 100%;
+    margin : 0 auto;
+    border-radius : 15px;
+    border : 1px solid #bbb;
+    box-shadow : 0 0 10px rgba(0,0,0,.2), 0 0 100px rgba(255,255,255,.5);
+    text-align : center;
+    position : relative;
+    background: linear-gradient(to bottom, #fff 0%, #ddd 50%);
+}
+div.block:nth-child(5) form > div
+{
+    padding : 30px;
+    max-width : 460px;
+    width : 100%;
+    height : 100%;
+    border-radius : 15px;
+    background-image : url('../img/5/texture.png');
+}
+div.block:nth-child(5) form label
+{
+    font-size : 1.1em;
+    color : #555;
+    text-shadow : .5px .5px 0 rgba(255,255,255,1);
+    margin : 0 0 0 20px;
+}
+div.block:nth-child(5) form p
+{
+    font-size : 1.3em;
+    color : #555;
+    text-shadow : .5px .5px 0 rgba(255,255,255,1);
+}
+div.block:nth-child(5) form div.button
+{
+    max-width : 450px;
+    padding : 15px 0;
+    margin : 20px auto 0;
+}
+div.block:nth-child(5) footer
+{
+    max-width : 100%;
+    padding : 30px 0 0;
+    margin : 50px auto 0;
+    border-top: 1px solid #ddd;
+    box-shadow : 0 -1px 0 rgba(0,0,0,.1);
+    font-size : 1em;
+    color : #333;
+    text-shadow : .5px .5px 0 rgba(250,250,250,1);
+}
+div.block:nth-child(5) div.final p
+{
+    font-size : 1.3em;
+    line-height : 1.4;
+    color : #b20101;
+    text-shadow : 0 0 2px rgba(255,255,255,.9);
+}
+@media (min-width : 1250px)
+{
+    div.block:nth-child(2) > img
+    {
+        display : block;
+    }
+}
+@media (max-width : 1100px)
+{
+    div.block:nth-child(3)
+    {
+        display : none;
+    }
+}
+@media (max-width : 700px)
+{
+    hgroup h1
+    {
+        font-size : 1.5em !important;
+    }
+    hgroup h2
+    {
+        font-size : 1.19em !important;
+    }
+    div.button
+    {
+        font-size : 1em;
+    }
+    div.block:nth-child(1) h3
+    {
+        font-size : 1em;
+    }
+    div.block:nth-child(2) h2, div.block:nth-child(2) h3
+    {
+        font-size : 1em;
+    }
+    div.block:nth-child(4) h2
+    {
+        font-size : 1em;
+    }
+}
+/* Анимационные блок - Три шага для получения прибыли*/
+.animate
+{
+    position : relative;
+    padding : 100px 0;
+    margin : 80px 0 80px 75px;
+}
+.animate .shadow
+{
+    position : absolute;
+    top : 280px;
+    width : 100%;
+    height : 10px;
+    border-radius : 100%;
+    background-color : rgba(100,100,100,.1);
+    box-shadow : 0 0 15px rgba(100,100,100,.2);
+}
+.progress1
+{
+    position : absolute;
+    z-index : 1;
+    top : 180px;
+    left : 25px;
+    max-width : 600px;
+    height : 4px;
+    border-radius : 4px;
+    border-top : 2px solid #ed8585;
+    border-bottom : 2px solid #ae0909;
+    background-color : #da0b0b;
+}
+.progress2
+{
+    position : absolute;
+    z-index : 0;
+    top : 180px;
+    left : 25px;
+    max-width : 900px;
+    height : 4px;
+    border-radius : 4px;
+    border-top : 2px solid #ffda8b;
+    border-bottom : 2px solid #cc9012;
+    background-color : #ffb417;
+}
+.icon
+{
+    position : absolute;
+    z-index : 3;
+    top : 158px;
+    width : 53px;
+    height : 53px;
+    border-radius : 100%;
+    background-image : url('../img/4/icon1.png');
+}
+.icon:nth-child(3)
+{
+    left : 0;
+}
+.icon:nth-child(4)
+{
+    left : 300px;
+}
+.icon:nth-child(5)
+{
+    left : 600px;
+}
+.icon:nth-child(6)
+{
+    top : 150px;
+    left : 900px;
+    width : 69px;
+    height : 69px;
+    background-image : url('../img/4/icon2.png');
+}
+.description
+{
+    position : absolute;
+    opacity : 0;
+    top : 0;
+    width : 220px;
+    min-height : 100px;
+    padding : 10px 0;
+    border-radius : 5px;
+    background: linear-gradient(290deg, #555 0%, #555 34%, #444 34%, #444 100%);
+    box-shadow : 0 0 1px rgba(0,0,0,.6);
+    font-size : 1.2em;
+    color : #fff;
+    text-align : center;
+}
+.description p 
+{
+    position : relative;
+    z-index : 9;
+    margin : 10px;
+    font-size : 0.9em;
+    text-shadow : 1px 1px 1px rgba(0,0,0,.5);
+}
+.description::before
+{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 120px;
+    background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(250,250,250,.1) 100%);
+    border-radius : 5px;
+    content: '';
+}
+.description::after
+{
+    position: absolute;
+    bottom: -38px;
+    left : 90px;
+    border: 20px solid transparent;
+    border-top: 20px solid #232323;
+    content: '';
+}
+.description:nth-child(7)
+{
+    left : -85px;
+}
+.description:nth-child(7) p
+{
+    margin : 15px 10px 0;
+}
+.description:nth-child(8)
+{
+    left : 215px;
+}
+.description:nth-child(8) p
+{
+    margin : 25px 10px 0;
+}
+.description:nth-child(9)
+{
+    left : 515px;
+}
+.description:nth-child(9) p
+{
+    margin : 25px 10px 0;
+}
+.description:nth-child(10)
+{
+    left : 820px;
+    padding : 10px 0 0;
+    min-height : 110px;
+    background: linear-gradient(290deg, #f5cc51 0%, #edc23e 33.5%, #efae1a 34%, #efae1a 100%);
+
+}
+.description:nth-child(10) p
+{
+    color : #7c5503;
+    margin : 15px 0 0;
+    font-size : 1.35em;
+    font-weight : 600;
+    text-shadow : .5px .5px 0 rgba(255,255,255,.9) !important;
+}
+.description:nth-child(10)::after
+{
+    border-top: 20px solid #dea217;
+}
+.description:nth-child(10)::before
+{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    border-radius : 5px;
+    background: linear-gradient(0deg, rgba(218,159,23,.8) 5%, rgba(250,250,250,.1) 100%);
+    content: '';
+}
+.step
+{
+    position : absolute;
+    top : 230px;
+    left : -15px;
+    font-size : 1.8em;
+    color : #d80808;
+}
+.step:nth-child(12)
+{
+    left : 280px;
+}
+.step:nth-child(13)
+{
+    left : 580px;
+}
+/* Анимация */
+.progressBar
+{
+    animation-name : progressBar;
+    animation-fill-mode : forwards;
+}
+@keyframes progressBar
+{
+    0%
+    {
+        width : 0;
+    }
+    100%
+    {
+        width : 100%;
+    }
+}
+div.checkbox
+{
+    display : inline-block;
+    position : relative;
+    vertical-align : middle;
+    margin : 0px 10px;
+    width : 80px;
+    height : 30px;
+    border : 1px solid #fff;
+    border-bottom : 1px solid #f1f1f1;
+    border-right : 1px solid #eee;
+    border-radius : 15px;
+    background : radial-gradient(circle farthest-side, #fff 0%, #fff 80%, #f1f1f1 100%);
+    box-shadow : inset 0 0 1px rgba(0,0,0,.4), inset -0.5px -0.5px 5px rgba(0,0,0,.2);
+    cursor : pointer;
+}
+div.checkbox div.status
+{
+    position : absolute;
+    top : 11px;
+    left : 15px;
+    width : 50px;
+    height : 8px;
+    border-radius : 5px;
+    border : 1px solid #fff;
+    background-color : #e80000;
+    box-shadow : inset 1px 1px 2px rgba(0,0,0,.4);
+}
+div.checkbox div.slider
+{
+    position : absolute;
+    top : 4px;
+    left : 5px;
+    width : 20px;
+    height : 20px;
+    border-radius : 100%;
+    border : 1px solid #fff;
+    border-bottom : 1px solid #eee;
+    border-right : 1px solid #eee;
+    background : radial-gradient(circle farthest-side, #fff 0%, #fff 85%, #ddd 100%);
+    box-shadow : 1px 1px 4px rgba(0,0,0,.4);
+}
+div.checkbox div.slider:hover
+{
+    border : 1px solid #eee;
+    background : radial-gradient(circle farthest-side, #fff 0%, #fff 90%, #ccc 100%);
+}
+div.checkbox div.slider[data-checked=true]
+{
+    animation-name : checkboxTrue;
+    animation-fill-mode : forwards;
+    animation-duration : 0.5s;
+}
+@keyframes checkboxTrue
+{
+    0%
+    {
+        left : 5px;
+    }
+    100%
+    {
+        left : 55px;
+    }
+}
+div.checkbox div.slider[data-checked=false]
+{
+    animation-name : checkboxFalse;
+    animation-fill-mode : forwards;
+    animation-duration : 0.5s;
+}
+@keyframes checkboxFalse
+{
+    0%
+    {
+        left : 55px;
+    }
+    100%
+    {
+        left : 5px;
+    }
+}
+/* Форма выбора языка */
+div#languague_new
+{
+    position : relative;
+    width : 145px;
+    padding : 6px 0;
+    border-radius : 5px;
+    background: linear-gradient(0deg, #e8e8e8 0%, #f3f3f3 100%);
+    box-shadow : 0 -1px 2px rgba(0,0,0,0.3);
+    text-align : center;
+    font-size : 1.1em;
+}
+div#languague_new:hover
+{
+    background: linear-gradient(0deg, #e9e9e9 0%, #fff 100%);
+    cursor : pointer;
+}
+div#languague_new div.selected
+{
+    text-align : left;
+    padding : 0 0 0 10px;
+}
+div#languague_new .list /* Выпадающй список */
+{
+    display : none;
+    position : absolute;
+    z-index : 99;
+    left : 0px;
+    width : 100%;
+    margin : 6px 0 0;
+    padding : 0;
+    border-radius : 0 0 5px 5px;
+    background-color : #fff;
+    box-shadow : 0 0 1px rgba(0,0,0,0.3);
+    text-align : center;
+}
+div#languague_new .list > div
+{
+    padding : 5px 15px;
+    border-bottom : 1px solid rgba(0,0,0,.1);
+    text-align : left;
+}
+div#languague_new .list > div:hover
+{
+    background-color : #d11808;
+    cursor : pointer;
+}
+div#languague_new .list > div:hover a
+{
+    color : #fff;
+    cursor : pointer;
+}
+div#languague_new .list > div:last-child
+{
+    border-radius : 0 0 5px 5px;
+    border : none;
+}
+div#languague_new img
+{
+    display : inline-block;
+    vertical-align : middle;
+    margin : 5px 10px;
+    box-shadow : 0 0 1px rgba(0,0,0,.5);
+}
+div#languague_new a
+{
+    display : inline-block;
+    vertical-align : middle;
+    font-size : 0.8em;
+    text-decoration : none;
+    color : #666;
+}
+div#languague_new .arrow
+{
+    display : inline-block;
+    margin : 5px 0 0 10px;
+    vertical-align : middle;
+    border: 5px solid transparent;
+    border-top: 5px solid #999;
+}
